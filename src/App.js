@@ -9,6 +9,7 @@ function App() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
       .then((posts) => setPosts(posts));
+    console.log(posts, "postst");
   }, []);
 
   return (
